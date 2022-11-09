@@ -30,6 +30,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Badge(
+              shape: BadgeShape.square,
+              badgeColor: Colors.deepPurple,
+              borderRadius: BorderRadius.circular(8),
+              animationType: BadgeAnimationType.scale,
               badgeContent: Text(
                 _count.toString(),
                 style: const TextStyle(color: Colors.white),
